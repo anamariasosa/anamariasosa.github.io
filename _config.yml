@@ -1,0 +1,30 @@
+# Site settings
+title: Hablemos de web
+email: anamariasosam@gmail.com
+description: Me gusta compartir lo que día a día aprendo porque de esto se trata este medio de aprender a aprender y compartir nuestro conocimiento, porque de esta manera animamos a otros a entrar al maravilloso mundo de la programación.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://anamariasosa.com" # the base hostname & protocol for your site
+twitter_username: anamariasosam
+github_username:  anamariasosam
+paginate: 3
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+
+#Default settings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      author: Ana Sosa
+      layout: "post"
+      comments: true
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "page"
