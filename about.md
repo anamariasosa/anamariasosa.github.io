@@ -2,5 +2,4 @@
 title: About
 permalink: /about/
 ---
-
-Por fin me arriesgué, ahora tengo un lienzo para poner mis pensamientos 
+Mi nombre es Ana María me gusta mucho aprender cosas nuevas todo los días siempre me llamaba la atención tener un blog pero hoy tomé el riesgo de crearlo
