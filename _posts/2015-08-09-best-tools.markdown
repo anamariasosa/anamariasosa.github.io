@@ -14,6 +14,6 @@ Lo mejor que tiene Sublime es que nos permite personalizarlo, con Seti UI podrem
 
 [Quiero Descargar Sublime 3](http://www.sublimetext.com/3)
 
-[Quiero Aprender los shortcuts para Sublime](http://localhost:4000/sublime-shortcuts/)
+[Quiero Aprender los shortcuts para Sublime](http://anamariasosa.com/sublime-shortcuts/)
 
-[Quiero Tener Seti UI en mi editor (Debe ser Sublime Text 3)](http://localhost:4000/sublime-seti-ui/)
+[Quiero Tener Seti UI en mi editor (Debe ser Sublime Text 3)](http://anamariasosam.com/sublime-seti-ui/)
