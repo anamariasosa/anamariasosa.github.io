@@ -31,7 +31,7 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"],
-textarea {color: #666666;border: 1px solid #CCCCCC;}
+textarea {color: #666666;}
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -70,7 +70,7 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"] {background: #F4F3F1;border: 1px solid #E9E7E3;}
+input[type="search"] {background: #Fff;}
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,

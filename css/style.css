@@ -1309,9 +1309,10 @@ a:hover, a:focus, a:active {
 
 .panel {
   display: none;
-  margin: 0;
+  margin: 0 auto;
   position: relative;
-  width: 100%;
+  padding-left: 40px;
+  width: 720px;
   background: #d25349;
 }
 .panel .widget-areas:before,
@@ -1392,6 +1393,7 @@ a:hover, a:focus, a:active {
   clear: both;
 }
 .panel .search-wrapper {
+  padding: 25px 25px 0 25px;
   margin: 0 auto;
   max-width: 40em;
 }

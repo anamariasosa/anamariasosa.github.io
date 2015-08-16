@@ -7,16 +7,20 @@
       <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
       <div class="menu">
+
+
         <ul>
-          <li class="current_page_item">
-            <a href="{{ site.baseurl }}/">Inicio</a>
-          </li>
-          <li class="page_item page-item-2">
-            <a href="#">¿ Quién es el que escribe ?</a>
-          </li>
-          <li class="page_item page-item-78">
-            <a href="#">contact</a>
-          </li>
+        
+          {% for page in site.pages %}
+            {% if page.title %}
+              <li class="current_page_item">
+                <a href="{{ site.baseurl }}/">Inicio</a>
+              </li>
+              <li class="current_page_item">
+                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </div>
     </nav><!-- #site-navigation -->
@@ -24,12 +28,23 @@
   <div id="social-links-toggle-nav" class="panel">
     <div class="social-links">
       <ul id="menu-social-links" class="menu">
-        <li id="menu-item-4" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4">
-          <a href="https://twitter.com/AnaMariaSosaM"><span class="screen-reader-text">Twitter</span></a>
-        </li>
-        <li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5"><a href="https://www.facebook.com/profile.php?id=1196953549"><span class="screen-reader-text">Facebook</span></a></li>
+        <li id="menu-item-4" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4"><a target="_blank" href="https://twitter.com/AnaMariaSosaM"><span class="screen-reader-text">Twitter</span></a></li>
+        <li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5"><a target="_blank" href="https://www.facebook.com/profile.php?id=1196953549"><span class="screen-reader-text">Facebook</span></a></li>
+        <li id="menu-item-89" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-89"><a target="_blank" href="https://plus.google.com/u/0/+AnaSosa/posts"><span class="screen-reader-text">Google Plus</span></a></li>
+        <li id="menu-item-90" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90"><a target="_blank" href="https://github.com/anamariasosa"><span class="screen-reader-text">Github</span></a></li>  
       </ul>
     </div>   
+  </div>
+
+  <div id="search-toggle-nav" class="panel">
+    <div class="search-wrapper">
+     <div id="search-container">
+       <input type="text" id="search-input" class="search-form seacrh-input" placeholder="Escribe el título de la entrada que buscas...">
+       <div class="col-md-12 content-panel articles">
+         <ul id="results-container"></ul>
+       </div>
+     </div>
+    </div>
   </div>
     
   <header id="masthead" class="site-header" role="banner">
@@ -49,13 +64,5 @@
         </div><!-- #search-toggle -->
     </div><!-- .toggles -->
     </div>
-
-    <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
 
   </header>
