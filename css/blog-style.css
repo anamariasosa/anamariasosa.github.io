@@ -1,5 +1,5 @@
 .read-more {
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 700px) {
@@ -11,19 +11,53 @@
     }
 }
 
-.post {
-	padding-left: 60px
+.post {/*
+    padding-left: 30px*/
+}
+
+.site-title {
+    padding-right: 20px;
 }
 
 .pagination {
-	 display: table;
+     display: table;
     margin: 0 auto;
 }
 
 .page-number {
-	margin: 0 10px;
+    margin: 0 10px;
 }
 
 a:hover {
     text-decoration: none;
+}
+
+.seacrh-input {
+    width: 100%;
+    background-color: #fff;
+    border: 0;
+}
+
+#search-toggle-nav {
+    padding-left: 0;
+    color: #fff;
+}
+
+#results-container li a{
+    color: #fff;
+}
+
+
+#results-container  li {
+    list-style-type: none;
+}
+
+#results-container  li:before {
+    content: "• ";
+    color: #fff; 
+}
+
+.site-info {
+    padding-right: 20px;
+    text-align: right;
 }
