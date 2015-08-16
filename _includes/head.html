@@ -7,6 +7,26 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
+  
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  
+  <link rel='stylesheet' id='dashicons-css'  href='{{ "/css/dashicons.min.css" | prepend: site.baseurl }}' type='text/css' media='all' />
+  <link rel='stylesheet' id='admin-bar-css'  href='{{ "/css/admin-bar.min.css" | prepend: site.baseurl }}' type='text/css' media='all' />
+
+
+  <link rel='stylesheet' id='hexa-source-sans-pro-css'  href='http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic&#038;ver=4.2.4' type='text/css' media='all' />
+  <link href='http://fonts.googleapis.com/css?family=Lobster+Two:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <link rel='stylesheet' id='genericons-css'  href='{{"/genericons/genericons.css" | prepend: site.baseurl }}' type='text/css' media='all' />
+
+  
+  <link rel="stylesheet" href="{{ "/css/hexa.css" | prepend: site.baseurl }}">
+
+	<link rel="stylesheet" href="{{ "/css/blog-style.css" | prepend: site.baseurl }}">
+
+
 </head>

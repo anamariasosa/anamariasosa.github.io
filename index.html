@@ -2,23 +2,47 @@
 layout: default
 ---
 
-<div class="home">
+<div id="primary" class="content-area">
+  <main id="main" class="site-main" role="main">
+    <ul class="post-list">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
     {% for post in paginator.posts %}
+
       <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <p>{{post.excerpt}}</p>
-        <a href="{{post.url | prepend: site.baseurl}}">Leer más</a>
+        <article id="post-62" class="post-62 post type-post status-publish format-standard hentry ">
+              <span class="entry-format"></span>
+            <header class="entry-header">
+            <h1 class="entry-title">
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h1>  </header><!-- .entry-header -->
+
+            <div class="entry-summary">
+              <p>{{post.excerpt}}</p>
+       
+              
+                
+              
+            </div><!-- .entry-content -->
+            
+            <div class="read-more">
+              <a href="{{post.url | prepend: site.baseurl}}">Leer más</a>
+            </div>
+
+            <footer class="entry-meta">
+              <span class="post-date">
+                <time class="entry-date" datetime="2015-08-15T20:56:02+00:00">{{ post.date | date: "%b %-d, %Y" }}</time>
+              </span>
+            </footer>
+          <!-- .entry-meta -->
+        </article>
       </li>
+     
       
     {% endfor %}
   </ul>
+  </main>
+  </div>
+
   {% if paginator.total_pages > 1 %}
   <div class="pagination">
     {% if paginator.previous_page %}
