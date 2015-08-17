@@ -1,35 +1,36 @@
+a:hover {
+    text-decoration: none;
+}
+
 .read-more {
     margin-bottom: 5px;
-}
-
-@media screen and (max-width: 700px) {
-    .panel {
-        display: none;
-        margin: 0;
-        position: relative;
-        width: 100%;
-    }
-}
-
-.post {/*
-    padding-left: 30px*/
 }
 
 .site-title {
     padding-right: 20px;
 }
 
-.pagination {
-     display: table;
-    margin: 0 auto;
+.site-content {
+    height: 100%;
+    min-height: 100%;
+}
+
+.site-info {
+    padding-right: 20px;
+    text-align: right;
 }
 
 .page-number {
     margin: 0 10px;
 }
 
-a:hover {
-    text-decoration: none;
+.page-container {
+    padding-left: 58px;
+}
+
+.pagination {
+    display: table;
+    margin: 0 auto;
 }
 
 .seacrh-input {
@@ -47,7 +48,6 @@ a:hover {
     color: #fff;
 }
 
-
 #results-container  li {
     list-style-type: none;
 }
@@ -57,7 +57,33 @@ a:hover {
     color: #fff; 
 }
 
-.site-info {
-    padding-right: 20px;
-    text-align: right;
+.share-page {
+    text-align: center;
+    background: $secondary-color;
+    color: $light-color;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 1.5 * $spacing-unit 0;
+
+    a {
+        font-weight: 700;
+        color: #fff;
+        margin-left: 10px;
+
+        &:hover {
+            border-bottom: 1px dashed #fff;
+        }
+    }
 }
+
+
+@media screen and (max-width: 700px) {
+    .panel {
+        display: none;
+        margin: 0;
+        position: relative;
+        width: 100%;
+    }
+}
+
+

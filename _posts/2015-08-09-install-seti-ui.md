@@ -18,6 +18,3 @@ Pegar lo siguiente en las preferencias de usuario(Preferences – Settings User)
 “color_scheme”: “Packages/Seti_UI/Scheme/Seti.tmTheme”,
 
 5. Guardar y ¡listo!
-
-Aquí un video paso a paso:
-<iframe width="480" height="360" src="https://www.youtube.com/watch?v=XhmD6_9wq6U" frameborder="0"> </iframe>
