@@ -1739,11 +1739,11 @@ a:hover, a:focus, a:active {
   display: inline;
 }
 
-.entry-content
+/*.entry-content
 {
   margin-top: 28px;
 }
-
+*/
 .entry-summary {
   margin-top: -25px;
 }
