@@ -10,11 +10,11 @@ Seti UI es un tema que nos permitirá tener un aspecto diferente de nuestro edit
 Pasos:
 
 
-cmd(⌘) + shift(⇧) + p : Para acceder al Package Control
-Empezar a escribir “Install Package”, dar enter
-Escribir Seti_UI, dar enter
-Pegar lo siguiente en las preferencias de usuario(Preferences – Settings User):
-“theme”: “Seti.sublime-theme”,
-“color_scheme”: “Packages/Seti_UI/Scheme/Seti.tmTheme”,
+1. cmd(⌘) + shift(⇧) + p : Para acceder al Package Control
+2. Empezar a escribir “Install Package”, dar enter
+3. Escribir Seti_UI, dar enter
+4. Pegar lo siguiente en las preferencias de usuario(Preferences – Settings User):
+`“theme”: “Seti.sublime-theme”,
+“color_scheme”: “Packages/Seti_UI/Scheme/Seti.tmTheme”,`
 
 5. Guardar y ¡listo!
