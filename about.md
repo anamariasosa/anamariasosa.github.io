@@ -2,6 +2,7 @@
 title: About
 permalink: /about/
 layout: page
+image: about.png
 ---
 Mi nombre es Ana María, soy de la ciudad de la eterna primavera, Medellín, tengo 19 años, soy la "niña"  mimada en mi familia, lo que más me enorgullece de mi familia es mi mamá, que es bloguera 🙊.
 

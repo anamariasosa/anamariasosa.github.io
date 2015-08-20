@@ -10,12 +10,12 @@
 
 
         <ul>
-        
+          <li class="current_page_item">
+            <a href="{{ site.baseurl }}/">Blog</a>
+          </li>
           {% for page in site.pages %}
             {% if page.title %}
-              <li class="current_page_item">
-                <a href="{{ site.baseurl }}/">Posts</a>
-              </li>
+              
               <li class="current_page_item">
                 <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
               </li>
@@ -50,7 +50,7 @@
   <header id="masthead" class="site-header" role="banner">
     <div class="site-header-wrapper">
       <div class="site-branding">
-        <h1 class="site-title"><a href="{{ site.baseurl }}/" rel="home">El rincón del nerdeo</a></h1>
+        <h1 class="site-title"><a href="{{ site.baseurl }}/" rel="home">Ana Sosa</a></h1>
       </div>
       <div class="toggles">
         <div id="menu-toggle" class="toggle" title="Menu">

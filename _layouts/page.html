@@ -5,14 +5,16 @@ layout: default
 <div id="content">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<article class="post-83 post type-post status-publish format-standard hentry category-sin-categoria">
+			<article class="format-standard hentry ">
 				<span class="entry-format"></span>
 				<header class="entry-header">
 					<h1 class="entry-title">{{ page.title }}</h1>	
 				</header><!-- .entry-header -->
-				<figure>
-					<img src="/img/about.png" alt="{{ include.title }}"/>
-				</figure>
+				{% if page.image %}
+					<figure>
+						<img src="/img/{{page.image}}" alt="{{ include.title }}"/>
+					</figure>
+				{% endif %}
 				<div class="entry-content">
 					<p>{{ content }}</p>
 				</div><!-- .entry-content -->
