@@ -15,7 +15,6 @@
           </li>
           {% for page in site.pages %}
             {% if page.title %}
-              
               <li class="current_page_item">
                 <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
               </li>
@@ -28,10 +27,32 @@
   <div id="social-links-toggle-nav" class="panel">
     <div class="social-links">
       <ul id="menu-social-links" class="menu">
-        <li id="menu-item-4" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4"><a target="_blank" href="https://twitter.com/AnaMariaSosaM"><span class="screen-reader-text">Twitter</span></a></li>
-        <li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5"><a target="_blank" href="https://www.facebook.com/profile.php?id=1196953549"><span class="screen-reader-text">Facebook</span></a></li>
-        <li id="menu-item-89" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-89"><a target="_blank" href="https://plus.google.com/u/0/+AnaSosa/posts"><span class="screen-reader-text">Google Plus</span></a></li>
-        <li id="menu-item-90" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90"><a target="_blank" href="https://github.com/anamariasosa"><span class="screen-reader-text">Github</span></a></li>  
+        <li id="menu-item-4" class="menu-item menu-item-type-custom menu-item-object-custom">
+          <a target="_blank" href="https://twitter.com/AnaMariaSosaM">
+            <span class="screen-reader-text">Twitter</span>
+          </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom">
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=1196953549">
+            <span class="screen-reader-text">Facebook</span>
+          </a>
+        </li>
+        <li  class="menu-item menu-item-type-custom menu-item-object-custom">
+          <a target="_blank" href="https://plus.google.com/u/0/+AnaSosa/posts">
+            <span class="screen-reader-text">Google Plus</span>
+          </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom">
+          <a target="_blank" href="https://github.com/{{site.github_username}}">
+            <span class="screen-reader-text">Github</span>
+          </a>
+        </li>
+
+        <li class="menu-item menu-item-type-custom menu-item-object-custom">
+          <a href="mailto:{{site.email}}?Subject=Me%20gusta%20tu%20blog" target="_top">
+            <span class="screen-reader-text">Email</span>
+          </a>
+        </li>   
       </ul>
     </div>   
   </div>
@@ -56,13 +77,12 @@
         <div id="menu-toggle" class="toggle" title="Menu">
           <span class="screen-reader-text">Menu</span>
         </div><!-- #menu-toggle -->
-                      <div id="social-links-toggle" class="toggle" title="Social Links">
-            <span class="screen-reader-text">Social Links</span>
-          </div><!-- #social-links-toggle -->
-              <div id="search-toggle" class="toggle" title="Search">
+        <div id="social-links-toggle" class="toggle" title="Social Links">
+          <span class="screen-reader-text">Social Links</span>
+        </div><!-- #social-links-toggle -->
+        <div id="search-toggle" class="toggle" title="Search">
           <span class="screen-reader-text">Search</span>
         </div><!-- #search-toggle -->
-    </div><!-- .toggles -->
+      </div><!-- .toggles -->
     </div>
-
   </header>
