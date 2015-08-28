@@ -1,6 +1,6 @@
 ---
 title:  "Las mejores herramientas"
-date:   2015-08-09 16:49:55
+date:   2015-08-10 16:49:55
 categories: herramientas
 permalink: blog/herramientas-para-todos
 ---

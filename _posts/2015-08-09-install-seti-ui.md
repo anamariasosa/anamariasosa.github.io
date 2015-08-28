@@ -1,6 +1,6 @@
 ---
 title:  "Instalar Seti UI"
-date:   2015-08-09 16:49:55
+date:   2015-08-11 16:49:55
 categories: herramientas
 permalink: blog/sublime-seti-ui
 ---

@@ -91,7 +91,7 @@ a:hover, a:focus, a:active {color: #6A524A;}
 .lines span.four {background-color: #6A524A;}
 .lines span.five {background-color: #FF0078;}
 .site-content {border-left: 8px solid #FF00C1;}
-.site-title a {color: #FF00C1; font-family: 'Lobster Two', cursive;}
+.site-title a {color: #FF00C1;}
 .site-description {color: #BC6BE9;}
 .toggles .toggle {background-color: #FF00C1;}
 .toggles .toggle:before {border-right: 14px solid #FF00C1;}
