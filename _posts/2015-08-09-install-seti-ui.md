@@ -1,8 +1,8 @@
 ---
-title:  "Instalar Seti UI"
-date:   2015-08-11 16:49:55
-categories: herramientas
-permalink: blog/sublime-seti-ui
+title:  	"Instalar Seti UI"
+date:   	2015-08-11 16:49:55
+permalink: 	blog/sublime-seti-ui
+type: 		post
 ---
 
 Seti UI es un tema que nos permitirá tener un aspecto diferente de nuestro editor Sublime Text 3(debe ser el 3), aunque existen dos formas es muy bueno aprender a manejar Package Control, porque es desde ahí donde podemos instalar muchos snippets y plugins.

@@ -129,26 +129,26 @@ a:hover, a:focus, a:active {color: #6A524A;}
 .hentry.sticky .entry-format {background-color: #FF5DFF;}
 .hentry.sticky .entry-format:after {border-left-color: #FF5DFF;}
 .hentry.sticky .entry-format:before {border-right-color: #FF5DFF;}
-.hentry.format-gallery, .hentry.format-aside {border-color: #BC6BE9;}
-.hentry.format-gallery .entry-format, .hentry.format-aside .entry-format {background: #BC6BE9;}
-.hentry.format-gallery .entry-format:after, .hentry.format-aside .entry-format:after {border-left-color: #BC6BE9;}
-.hentry.format-gallery .entry-format:before, .hentry.format-aside .entry-format:before {border-right-color: #BC6BE9;}
-.hentry.format-link {border-color: #9ECCCC;}
-.hentry.format-link .entry-format {background: #9ECCCC;}
-.hentry.format-link .entry-format:after {border-left-color: #9ECCCC;}
-.hentry.format-link .entry-format:before {border-right-color: #9ECCCC;}
-.hentry.format-video, .hentry.format-audio {border-color: #BC6BE9;}
-.hentry.format-video .entry-format, .hentry.format-audio .entry-format {background: #BC6BE9;}
-.hentry.format-video .entry-format:after, .hentry.format-audio .entry-format:after {border-left-color: #BC6BE9;}
-.hentry.format-video .entry-format:before, .hentry.format-audio .entry-format:before {border-right-color: #BC6BE9;}
-.hentry.format-status, .hentry.format-quote {border-color: #FF0078;}
-.hentry.format-status .entry-format, .hentry.format-quote .entry-format {background: #FF0078;}
-.hentry.format-status .entry-format:after, .hentry.format-quote .entry-format:after {border-left-color: #FF0078;}
-.hentry.format-status .entry-format:before, .hentry.format-quote .entry-format:before {border-right-color: #FF0078;}
-.hentry.format-image, .hentry.format-gallery {border-color: #6A524A;}
-.hentry.format-image .entry-format, .hentry.format-gallery .entry-format {background-color: #6A524A;}
-.hentry.format-image .entry-format:after, .hentry.format-gallery .entry-format:after {border-left-color: #6A524A;}
-.hentry.format-image .entry-format:before, .hentry.format-gallery .entry-format:before {border-right-color: #6A524A;}
+.hentry.format-gallery, .hentry.format-aside {border-color: #FF00C1;}
+.hentry.format-gallery .entry-format, .hentry.format-aside .entry-format {background: #FF00C1;}
+.hentry.format-gallery .entry-format:after, .hentry.format-aside .entry-format:after {border-left-color: #FF00C1;}
+.hentry.format-gallery .entry-format:before, .hentry.format-aside .entry-format:before {border-right-color: #FF00C1;}
+.hentry.format-link {border-color: #FF00C1;}
+.hentry.format-link .entry-format {background: #FF00C1;}
+.hentry.format-link .entry-format:after {border-left-color: #FF00C1;}
+.hentry.format-link .entry-format:before {border-right-color: #FF00C1;}
+.hentry.format-video, .hentry.format-audio {border-color: #FF00C1;}
+.hentry.format-video .entry-format, .hentry.format-audio .entry-format {background: #FF00C1;}
+.hentry.format-video .entry-format:after, .hentry.format-audio .entry-format:after {border-left-color: #FF00C1;}
+.hentry.format-video .entry-format:before, .hentry.format-audio .entry-format:before {border-right-color: #FF00C1;}
+.hentry.format-status, .hentry.format-quote {border-color: #FF00C1;}
+.hentry.format-status .entry-format, .hentry.format-quote .entry-format {background: #FF00C1;}
+.hentry.format-status .entry-format:after, .hentry.format-quote .entry-format:after {border-left-color: #FF00C1;}
+.hentry.format-status .entry-format:before, .hentry.format-quote .entry-format:before {border-right-color: #FF00C1;}
+.hentry.format-image, .hentry.format-gallery {border-color: #FF00C1;}
+.hentry.format-image .entry-format, .hentry.format-gallery .entry-format {background-color: #FF00C1;}
+.hentry.format-image .entry-format:after, .hentry.format-gallery .entry-format:after {border-left-color: #FF00C1;}
+.hentry.format-image .entry-format:before, .hentry.format-gallery .entry-format:before {border-right-color: #FF00C1;}
 .page-links {color: #BC6BE9;}
 .page-links span.active-link {background-color: #FF00C1;color: #FFFFFF;}
 .page-links a span.active-link {background-color: #FF5DFF;color: #FFFFFF;}

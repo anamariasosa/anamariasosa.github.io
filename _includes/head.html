@@ -6,6 +6,14 @@
   <meta name="keywords" content="HTML,CSS,front end,developer tools,JavaScript">
   <meta name="author" content="Ana María Sosa">
 
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@anamariasosam">
+  <meta name="twitter:title" content="{{page.title}}">
+  <meta name="twitter:description" content="{{page.description}}">
+  <meta name="twitter:image" content="{{ "/img/mvc.png" | prepend: site.baseurl }}">
+
+
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
@@ -14,6 +22,9 @@
   
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+
+
 
   
   <link rel='stylesheet' id='dashicons-css'  href='{{ "/css/dashicons.min.css" | prepend: site.baseurl }}' type='text/css' media='all' />
