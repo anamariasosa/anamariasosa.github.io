@@ -9,7 +9,7 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@anamariasosam">
-  <meta name="twitter:title" content="{{page.title}}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:description" content="{{page.description}}">
   <meta name="twitter:image" content="http://anamariasosa.com/img/{{page.image}}">
 
