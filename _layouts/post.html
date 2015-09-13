@@ -9,11 +9,18 @@ layout: default
 				<header class="entry-header">
 					<h1 class="entry-title">{{ page.title }}</h1>	
 				</header><!-- .entry-header -->
-
+				
+				{% if page.image %}
+				<figure>
+					<img src="/img/{{page.image}}" alt="{{ include.title }} anamariasosam anamariasosa "/>
+				</figure>
+				{% endif %}
 				<div class="entry-content">
+					
 					<p>{{ content }}</p>
 				</div><!-- .entry-content -->
-					
+				
+
 				<footer class="entry-meta">
 					<span class="post-date">
 						<time class="entry-date" datetime="2015-08-15T18:57:11+00:00">{{ page.date | date: "%b %-d, %Y" }}</time>

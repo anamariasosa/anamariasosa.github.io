@@ -74,8 +74,6 @@ a:hover {
     text-align: center;
 }
 
-
-
 @media screen and (max-width: 700px) {
     .panel {
         display: none;
@@ -84,5 +82,3 @@ a:hover {
         width: 100%;
     }
 }
-
-
