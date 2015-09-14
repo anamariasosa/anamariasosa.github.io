@@ -6,13 +6,20 @@
   <meta name="keywords" content="HTML,CSS,front end,developer tools,JavaScript">
   <meta name="author" content="Ana María Sosa">
 
-
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@anamariasosam">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:description" content="{{page.description}}">
   <meta name="twitter:image" content="http://anamariasosa.com/img/{{page.image}}">
 
+  
+  <!-- Facebook Open Graph -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:site_name" content="Ana María Sosa">
+  <meta property="og:url" content="http://anamariasosa.com/{{ page.url | prepend: site.baseurl }}">
+  <meta property="og:description" content="{{page.description}}">
+  <meta property="og:type" content="article">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
