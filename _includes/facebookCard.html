@@ -1,0 +1,10 @@
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+<meta property="og:url" content="http://anamariasosa.com/{{ page.url | prepend: site.baseurl }}" />
+{% if page.image %}
+<meta property="og:image" content="http://anamariasosa.com/img/{{page.image}}"/>
+{% else %}
+<meta property="og:image" content="http://anamariasosa.com/img/blog.png">
+{% endif %}
+<meta property="og:image:width" content="450"/>
+<meta property="og:image:height" content="298"/>
