@@ -10,8 +10,8 @@
   <meta name="twitter:creator" content="@anamariasosam">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip_newlines | truncate: 140 }}{% endif %}">
-  {% if page.image %}
-  <meta name="twitter:image" content="http://anamariasosa.com/img/{{page.image}}">
+  {% if page.tw-image %}
+  <meta name="twitter:image" content="http://anamariasosa.com/img/{{page.tw-image}}">
   {% else %}
   <meta name="twitter:image" content="http://anamariasosa.com/img/blog.png">
   {% endif %}
