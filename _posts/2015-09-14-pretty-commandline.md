@@ -19,4 +19,6 @@ Pasos:
 2. Copia el mío y lo guardas
 {% gist 6bbd96b0c3f2e62ba12b %}
 
+En la terminal escribe `source .bash_profile`
+
 Reinicia la terminal y verás la magia, si no te gustan los colores se los puedes cambiar en la línea 81 y 96 y si tampoco te gustan los emojis los puedes borrar o cambiar. 
