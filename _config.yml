@@ -11,7 +11,7 @@ paginate: 3
 locale: en_us
 
 fb_admins: https://facebook.com/people/Ana-Mar%C3%ADa-Sosa/1196953549
-fb_appid:  397643063769257
+fb_appid:  187213728280691
 
 # Build settings
 markdown: kramdown
