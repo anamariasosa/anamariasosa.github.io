@@ -6,7 +6,12 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://anamariasosa.com" # the base hostname & protocol for your site
 twitter_username: anamariasosam
 github_username:  anamariasosa
+avatar: http://anamariasosa.com/img/blog.png
 paginate: 3
+locale: en_us
+
+fb_admins: https://facebook.com/people/Ana-Mar%C3%ADa-Sosa/1196953549
+fb_appid:  397643063769257
 
 # Build settings
 markdown: kramdown
