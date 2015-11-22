@@ -15,7 +15,8 @@ Pasos:
 3. Escribir Seti_UI, dar enter
 4. Pegar lo siguiente en las preferencias de usuario(Preferences – Settings User):
 
-`“theme”: “Seti.sublime-theme”,
-“color_scheme”: “Packages/Seti_UI/Scheme/Seti.tmTheme”,`
+`“theme”: “Seti.sublime-theme”,`
+
+` “color_scheme”: “Packages/Seti_UI/Scheme/Seti.tmTheme”,`
 
 Y listo, mira un video paso a paso [aquí](https://www.youtube.com/watch?v=XhmD6_9wq6U) 

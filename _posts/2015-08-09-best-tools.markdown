@@ -15,6 +15,6 @@ Lo mejor que tiene Sublime es que nos permite personalizarlo, con Seti UI podrem
 Luego la terminal:
 [iTerm 2](https://www.iterm2.com/downloads.html) es una buena opción, es gratis, además la podemos personalizar con los colores que nos gusten para que no se vea aburrida.
 
-[Quiero Aprender los shortcuts para Sublime](http://anamariasosa.com/sublime-shortcuts/)
+[Quiero Aprender los shortcuts para Sublime](http://anamariasosa.com/sublime-shortcuts/blog/)
 
-[Quiero Tener Seti UI en mi editor (Debe ser Sublime Text 3)](http://anamariasosam.com/sublime-seti-ui/)
+[Quiero Tener Seti UI en mi editor (Debe ser Sublime Text 3)](http://anamariasosam.com/blog/sublime-seti-ui/)
