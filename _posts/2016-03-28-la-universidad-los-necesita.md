@@ -1,5 +1,5 @@
 ---
-title:  		"JAVA--"
+title:  		"Los lenguajes universitarios"
 date:   		2016-03-28 1:49:55js
 permalink: 		blog/la-universidad
 type: 			post
