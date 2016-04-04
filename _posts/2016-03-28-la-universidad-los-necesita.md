@@ -1,6 +1,6 @@
 ---
 title:  		"Los lenguajes universitarios"
-date:   		2016-03-28 1:49:55js
+date:   		2016-03-28 1:49:55
 permalink: 		blog/la-universidad
 type: 			post
 description: 	"Actualmente estoy en cuarto semestre, puedo notar que en muchos de mis compañeros, los ojos que brillaban por aprender a programar ya se han opacado y en algunos he escuchado la misma expresión de ‘que pereza programar’"
