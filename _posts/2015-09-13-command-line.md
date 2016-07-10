@@ -5,10 +5,12 @@ permalink: 		blog/terminal
 type: 			post
 description: 	"Siete comandos de la terminal que deberías saber"
 image: 			commandline.png
+read_time : 7
+feature_image: recommend-woods
 ---
 Antes los computadores no tenían interfaces gráficas con botones, ventanas y menús. Así que las personas manejaban sus computadores digitando los comandos y presionando enter.
 
-Pero la terminal no es cosa del pasado, hoy en día es muy útil para ahorrarnos tiempo, para instalar programas, frameworks de desarrollo. Si además quieres ser un buen desarrollador debes aprender a usar la terminal, hacerte amigo de ella. 
+Pero la terminal no es cosa del pasado, hoy en día es muy útil para ahorrarnos tiempo, para instalar programas, frameworks de desarrollo. Si además quieres ser un buen desarrollador debes aprender a usar la terminal, hacerte amigo de ella.
 
 Yo te contaré algunos comandos que por lo menos deberías saber pero si estás interesado en aprender más en Codecademy hay un [curso](https://www.codecademy.com/en/courses/learn-the-command-line)
 
