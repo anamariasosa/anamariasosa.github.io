@@ -3,6 +3,8 @@ title:  	"Las mejores herramientas"
 date:   	2015-08-10 16:49:55
 permalink: 	blog/herramientas-para-todos
 type: 		post
+read_time : 5
+feature_image: recommend-woods
 ---
 Cuando empezamos a meternos en el mundo de la programación personalmente me gusta que las herramientas sean fáciles de usar, útiles, me ayuden a ahorrar tiempo y también bonitas.
 
