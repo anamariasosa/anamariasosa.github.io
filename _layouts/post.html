@@ -24,11 +24,23 @@ layout: default
 
             {{ content }}
 
+            <footer class="entry-meta">
+              <span class="post-date">
+                <time class="entry-date" datetime="2015-08-15T18:57:11+00:00">{{ page.date | date: "%b %-d, %Y" }}</time>
+              </span>
+              <div class="share-page">
+
+                <p>¿Te gustó? ¡Compártelo! </p>
+                <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a> -
+                <span class="sep"> | </span>
+                <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a> - <span class="sep"> | </span> - <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a> - - <a class="twitter" href="https://twitter.com/intent/tweet?url=https://stepic.org/city" target="_blank">here</a> - </div>
+              </footer>
+
+              {% include disqus.html disqus_identifier=page.disqus_identifier %}
         </div><!-- main-content/col -->
     </div> <!--/row -->
 
 </main> <!-- /container -->
-
 <footer class="single">
     {% include footer-single.html %}
 
@@ -36,5 +48,3 @@ layout: default
         {% include footer-related-posts.html %}
     {% endif %}
 </footer>
-
-
