@@ -1,44 +1,46 @@
 ---
-layout: default
-description: "Este es lugar donde comparto todo lo que las demás personas me han enseñado"
-image: about.png
+layout: with-sidebar
+title: Ana María
+feature_image: js-thumbnail
+desc: "Este es lugar donde comparto todo lo que las demás personas me han enseñado"
+include_cta_btn: true
+cta_text: About
+cta_link: /about/
+cta_icon: fa-heart
 ---
-<div id="primary" class="content-area">
-  <main id="main" class="site-main" role="main">
-    <ul class="post-list">
 
+<div class="sub-nav">
+    <a href="#" class="select-posts active">Posts</a>
+    <!-- <a href="#" class="select-categories">Categories</a> -->
+</div>
+
+<div class="home-page-posts animated fadeIn ">
+
+  <div class="home-page-posts animated fadeIn ">
     {% for post in paginator.posts %}
 
-      <li>
-        <article id="post-62" class="post-62 post type-post status-publish format-{{ post.type }} hentry ">
-              <span class="entry-format"></span>
-            <header class="entry-header">
-            <h2 class="entry-title">
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>  </header><!-- .entry-header -->
+    <article class="post">
+        <div class="post-preview col-xs-10  no-gutter">
+            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
-            <div class="entry-summary">
-              <p>{{post.excerpt}}</p>
-            </div><!-- .entry-content -->
-            
-            <div class="read-more">
-              <a href="{{post.url | prepend: site.baseurl}}">Leer más</a>
-            </div>
+            {{ post.excerpt | truncatewords: 28 }}
 
-            <footer class="entry-meta">
-              <span class="post-date">
-                <time class="entry-date" datetime="2015-08-15T20:56:02+00:00">{{ post.date | date: "%b %-d, %Y" }}</time>
-              </span>
-            </footer>
-          <!-- .entry-meta -->
-        </article>
-      </li>
-     
-      
+            <p class="meta">
+                <a href="{{ post.author_url | prepend: site.baseurl }}">{{ post.author_name | capitalize}}</a> in <a href='{{ "/category/" | append: post.categories.first | prepend: site.baseurl }}'>{{ post.categories.first | capitalize }}</a> <i class="link-spacer"></i> <i class="fa fa-bookmark"></i> {{ post.read_time }} minutes
+            </p>
+        </div>
+
+
+        {% if post.show_avatar == true %}
+        <div class=" col-xs-2  no-gutter">
+            <img src="{{ site.baseurl}}/img/{{ post.author_avatar }}.jpg" class="user-icon user-1" alt="user-image">
+        </div>
+        {% endif %}
+    </article>
     {% endfor %}
-  </ul>
-  </main>
-  
+
+</div><!-- Home page posts -->
+
 
   {% if paginator.total_pages > 1 %}
   <div class="pagination">

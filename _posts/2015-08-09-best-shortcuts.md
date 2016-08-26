@@ -4,6 +4,8 @@ date:   	2015-08-09 16:49:55
 permalink: 	blog/sublime-shortcuts
 type: 		post
 description: Algunos shortcuts de sublime que te podrán ayudar a ahorar tiempo
+read_time : 4
+feature_image: recommend-woods
 ---
 Muchas veces cuando vemos que alguien está haciendo algo super rápido en Sublime Text nos asombramos y queremos saber cómo lo hicieron,  pero muchas veces se nos olvidan, así que voy a compartirles algunos si tienes más puedes compartirlos como comentario.
 

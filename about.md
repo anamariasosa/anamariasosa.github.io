@@ -1,6 +1,7 @@
 ---
 title: About
 permalink: /about/
+feature_image: feature-book
 layout: page
 image: about.png
 ---
@@ -12,4 +13,3 @@ Actualmente soy estudiante de Ingeniería de Sistemas, en mi tiempo libre o no l
 He tenido la oportunidad de conocer a gente maravillosa que me han enseñado mucho así que veo mi blog como mi granito de manera para que otras personas puedan aprender nuevas herramientas, tecnologías, optimizar su tiempo, etc.
 
 El conocimiento es para compartirlo y más aún cuando otra persona nos lo compartió.
-
