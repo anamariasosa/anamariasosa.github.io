@@ -13,7 +13,7 @@ nav_list:
   Home : ['Inicio', '/', 'fa-home']
   About : ['About', '/about', 'fa-anchor']
 
-single_footer: '<p> Made with <i class="fa fa-heart"></i> | Hosted by Github. | 2016 © </p>'
+single_footer: '<p> Made with <i class="fa fa-heart"></i> | Hosted by Github. | 2017 © </p>'
 
 fb_admins: https://facebook.com/people/Ana-Mar%C3%ADa-Sosa/1196953549
 fb_appid:  187213728280691
