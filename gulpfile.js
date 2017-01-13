@@ -42,7 +42,6 @@ gulp.task('sass', function () {
   Notify if you have sintax errors
 */
 gulp.task('views', function () {
-  console.log(plugins.pug, "🦄🦄🦄🦄🦄");
   return gulp.src('src/views/*.pug')
     .pipe(plugins.pug({ pretty: true }))
     .on('error', plugins.notify.onError(function (err) { console.log(err.message); return "💔 Jade Error "; }))
