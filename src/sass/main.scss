@@ -35,8 +35,11 @@ $color-link: #96b5b4;
   margin-right: $padding / 2;
   color: $color-key;
 
+  &:before {
+    content: '"';
+  }
   &:after {
-    content: ':';
+    content: '":';
   }
 
   .complex-keys &:before {
@@ -99,12 +102,16 @@ $color-link: #96b5b4;
 
 .json__value--link {
   color: $color-link;
+  text-decoration: none;
 
   &:before {
     content: '"';
   }
   &:after {
     content: '",';
+  }
+  &:hover {
+    text-decoration: none;
   }
 
   @extend .json__value;

@@ -10,10 +10,10 @@ mixin link(name)
 
 block content
   .json
-    .json__container
-      fieldset.json__array.json__value--last
-        legend.json__key--nested data
-        fieldset.json__object
+      fieldset.json__object.json__value--last
+          label.json__pair
+            span.json__key type
+            span.json__value--boolean engineer
           label.json__pair
             span.json__key first_name
             span.json__value--string Ana
@@ -44,16 +44,16 @@ block content
               span.json__key status
               span.json__value--number 6/10
           fieldset.json__object
-            legend.json__key--nested ocupation
+            legend.json__key--nested job
             label.json__pair
               span.json__key role
               span.json__value--boolean CEO
             label.json__pair
-              span.json__key name
-              span.json__value--string Catlog
+              span.json__key company
+              a.json__value--link.json__value--last(href="https://catlog.co" target="_blank") Catlog
             label.json__pair
-              span.json__key link
-              a.json__value--link.json__value--last(href="https://catlog.co" target="_blank") catlog.co
+              span.json__key description
+              a.json__value--link.json__value--last(href="https://catlog.co" target="_blank") ecommerce for Instagram's stores
           fieldset.json__object
             legend.json__key--nested programming_languages
             label.json__pair
@@ -67,3 +67,7 @@ block content
             legend.json__key--nested social_networks
             each val in ['Facebook', 'Github', 'Instagram', 'Twitter', 'YouTube']
               +link(val)
+          fieldset.json__array
+            legend.json__key--nested slides
+            a.json__value--link(href="https://docs.google.com/presentation/d/1Ve5u_tNfA1s0k85z48qWHDMSH0LfOqSTSC8yjy7zjsc/edit?usp=sharing" target="_blank") GitHub
+            a.json__value--link(href="https://speakerdeck.com/anamariasosam/jekyll" target="_blank") Jekyll
