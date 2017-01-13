@@ -1,0 +1,179 @@
+/* line 16, src/sass/main.scss */
+.json {
+  padding: 1.25em;
+  background: #0E1112;
+  color: #c0c5ce;
+}
+/* line 21, src/sass/main.scss */
+.json *, .json :focus {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  font: 400 1em/1.5 "Source Code Pro", monospace;
+}
+
+/* line 30, src/sass/main.scss */
+.json__pair {
+  display: block;
+}
+
+/* line 34, src/sass/main.scss */
+.json__key, .json__key--nested {
+  margin-right: 0.625em;
+  color: #bf616a;
+}
+/* line 38, src/sass/main.scss */
+.json__key:before, .json__key--nested:before {
+  content: '"';
+}
+/* line 41, src/sass/main.scss */
+.json__key:after, .json__key--nested:after {
+  content: '":';
+}
+/* line 45, src/sass/main.scss */
+.complex-keys .json__key:before, .complex-keys .json__key--nested:before {
+  content: '"';
+}
+/* line 48, src/sass/main.scss */
+.complex-keys .json__key:after, .complex-keys .json__key--nested:after {
+  content: '":';
+}
+
+/* line 53, src/sass/main.scss */
+.json__key--nested {
+  float: left;
+  margin-left: -1.25em;
+  margin-right: 1.875em;
+}
+
+/* line 61, src/sass/main.scss */
+.json__value, .json__value--string, .json__value--number, .json__value--boolean, .json__value--link {
+  background: #0E1112;
+  color: #b48ead;
+}
+/* line 65, src/sass/main.scss */
+.json__value:focus, .json__value--string:focus, .json__value--number:focus, .json__value--boolean:focus, .json__value--link:focus {
+  color: #fff;
+}
+
+/* line 70, src/sass/main.scss */
+.json__value--string {
+  color: #a3be8c;
+}
+/* line 73, src/sass/main.scss */
+.json__value--string:before {
+  content: '"';
+}
+/* line 76, src/sass/main.scss */
+.json__value--string:after {
+  content: '",';
+}
+
+/* line 83, src/sass/main.scss */
+.json__value--number {
+  color: #d08770;
+}
+/* line 86, src/sass/main.scss */
+.json__value--number:after {
+  content: ',';
+}
+
+/* line 93, src/sass/main.scss */
+.json__value--boolean {
+  color: #d08770;
+}
+/* line 96, src/sass/main.scss */
+.json__value--boolean:after {
+  content: ',';
+}
+
+/* line 103, src/sass/main.scss */
+.json__value--link {
+  color: #96b5b4;
+  text-decoration: none;
+}
+/* line 107, src/sass/main.scss */
+.json__value--link:before {
+  content: '"';
+}
+/* line 110, src/sass/main.scss */
+.json__value--link:after {
+  content: '",';
+}
+/* line 113, src/sass/main.scss */
+.json__value--link:hover {
+  text-decoration: none;
+}
+
+/* line 121, src/sass/main.scss */
+.json__value--last:after {
+  content: '"';
+}
+
+/* line 126, src/sass/main.scss */
+.json__object {
+  padding-left: 1.25em;
+}
+/* line 129, src/sass/main.scss */
+.json__object:before, .json__object:after {
+  margin-left: -1.25em;
+}
+/* line 133, src/sass/main.scss */
+.json__object:before {
+  content: '{';
+}
+/* line 136, src/sass/main.scss */
+.json__object:after {
+  content: '},';
+}
+
+/* line 141, src/sass/main.scss */
+.json__container {
+  padding-left: 1.25em;
+}
+/* line 144, src/sass/main.scss */
+.json__container:before, .json__container:after {
+  margin-left: -1.25em;
+}
+/* line 148, src/sass/main.scss */
+.json__container:before {
+  content: '{';
+}
+/* line 151, src/sass/main.scss */
+.json__container:after {
+  content: '}';
+}
+
+/* line 156, src/sass/main.scss */
+.json__array {
+  padding-left: 1.25em;
+}
+/* line 159, src/sass/main.scss */
+.json__array:before, .json__array:after {
+  margin-left: -1.25em;
+}
+/* line 163, src/sass/main.scss */
+.json__array:before {
+  content: '[';
+}
+/* line 166, src/sass/main.scss */
+.json__array:after {
+  content: '],';
+}
+/* line 170, src/sass/main.scss */
+.json__array > .json__value, .json__array > .json__value--string, .json__array > .json__value--number, .json__array > .json__value--boolean, .json__array > .json__value--link {
+  display: block;
+}
+
+/* line 175, src/sass/main.scss */
+html {
+  background: #0E1112;
+  color: #c0c5ce;
+}
+
+/* line 180, src/sass/main.scss */
+h1 {
+  margin: 0.5em 0.5em 1em;
+  font-size: 2em;
+}
