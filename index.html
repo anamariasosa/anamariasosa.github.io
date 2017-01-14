@@ -1,195 +1,310 @@
 <!DOCTYPE html>
 <html amp>
-  <head>
-    <meta charset="utf-8">
-    <title>Ana María Sosa</title>
-    <link rel="canonical" href="index.html">
-    <script src="https://cdn.ampproject.org/v0.js" async></script>
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/favicons/manifest.json">
-    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="apple-mobile-web-app-title" content="Ana Sosa">
-    <meta name="application-name" content="Ana Sosa">
-    <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-    <meta name="description" content="Me as a json object, showing my ocupation and my location">
-    <style amp-custom>
-      @media (max-width: 390px) {
-        .json {
-          font-size: 0.8em;
-        }
-      }
+<head>
+  <meta charset="utf-8">
+  <title>Ana María Sosa</title>
+  <link rel="canonical" href="index.html">
+  <script src="https://cdn.ampproject.org/v0.js" async></script>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content=">Ana María Sosa">
+  <meta name="application-name" content=">Ana María Sosa">
+  <meta name="theme-color" content="#ffffff">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <meta name="description" content=">Ana María Sosa json object, showing my ocupation and my location">
+  <style amp-custom>
+    @media (max-width: 390px) {
       .json {
-        padding: 1.25em;
-        background: #0E1112;
-        color: #c0c5ce;
+          font-size: 0.8em;
       }
-      .json *, .json :focus {
-        padding: 0;
-        border: 0;
-        outline: 0;
-        margin: 0;
-        font: 400 1em/1.5 "Source Code Pro", monospace;
+    }
+
+    .json {
+      padding: 1.25em;
+      background: #0E1112;
+      color: #c0c5ce;
+    }
+
+    .json *,
+    .json :focus {
+      padding: 0;
+      border: 0;
+      outline: 0;
+      margin: 0;
+      font: 400 1em/1.5 "Source Code Pro", monospace;
+    }
+
+    .json__pair {
+      display: block;
+    }
+
+    .json__key,
+    .json__key--nested {
+      margin-right: 0.625em;
+      color: #bf616a;
+    }
+
+    .json__key:before,
+    .json__key--nested:before {
+      content: '"';
+    }
+
+    .json__key:after,
+    .json__key--nested:after {
+      content: '":';
+    }
+
+    .complex-keys .json__key:before,
+    .complex-keys .json__key--nested:before {
+      content: '"';
+    }
+
+    .complex-keys .json__key:after,
+    .complex-keys .json__key--nested:after {
+      content: '":';
+    }
+
+    .json__key--nested {
+      float: left;
+      margin-left: -1.25em;
+      margin-right: 1.875em;
+    }
+
+    .json__value,
+    .json__value--string,
+    .json__value--number,
+    .json__value--boolean,
+    .json__value--link {
+      background: #0E1112;
+      color: #b48ead;
+    }
+
+    .json__value:focus,
+    .json__value--string:focus,
+    .json__value--number:focus,
+    .json__value--boolean:focus,
+    .json__value--link:focus {
+      color: #fff;
+    }
+
+    .json__value--string {
+      color: #a3be8c;
+    }
+
+    .json__value--string:before {
+      content: '"';
+    }
+
+    .json__value--string:after {
+      content: '",';
+    }
+
+    .json__value--number {
+      color: #d08770;
+    }
+
+    .json__value--number:after {
+      content: ',';
+    }
+
+    .json__value--boolean {
+      color: #d08770;
+    }
+
+    .json__value--boolean:after {
+      content: ',';
+    }
+
+    .json__value--link {
+      color: #96b5b4;
+      text-decoration: none;
+    }
+
+    .json__value--link:before {
+      content: '"';
+    }
+
+    .json__value--link:after {
+      content: '",';
+    }
+
+    .json__value--link:hover {
+      text-decoration: none;
+    }
+
+    .json__value--last:after {
+      content: '"';
+    }
+
+    .json__object {
+      padding-left: 1.25em;
+    }
+
+    .json__object:before,
+    .json__object:after {
+      margin-left: -1.25em;
+    }
+
+    .json__object:before {
+      content: '{';
+    }
+
+    .json__object:after {
+      content: '},';
+    }
+
+    .json__container {
+      padding-left: 1.25em;
+    }
+
+    .json__container:before,
+    .json__container:after {
+      margin-left: -1.25em;
+    }
+
+    .json__container:before {
+      content: '{';
+    }
+
+    .json__container:after {
+      content: '}';
+    }
+
+    .json__array {
+      padding-left: 1.25em;
+    }
+
+    .json__array:before,
+    .json__array:after {
+      margin-left: -1.25em;
+    }
+
+    .json__array:before {
+      content: '[';
+    }
+
+    .json__array:after {
+      content: '],';
+    }
+
+    .json__array>.json__value,
+    .json__array>.json__value--string,
+    .json__array>.json__value--number,
+    .json__array>.json__value--boolean,
+    .json__array>.json__value--link {
+      display: block;
+    }
+
+    html {
+      background: #0E1112;
+      color: #c0c5ce;
+    }
+
+    h1 {
+      margin: 0.5em 0.5em 1em;
+      font-size: 2em;
+    }
+  </style>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
       }
-      .json__pair {
-        display: block;
+      to {
+        visibility: visible
       }
-      .json__key, .json__key--nested {
-        margin-right: 0.625em;
-        color: #bf616a;
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
       }
-      .json__key:before, .json__key--nested:before {
-        content: '"';
+      to {
+        visibility: visible
       }
-      .json__key:after, .json__key--nested:after {
-        content: '":';
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
       }
-      .complex-keys .json__key:before, .complex-keys .json__key--nested:before {
-        content: '"';
+      to {
+        visibility: visible
       }
-      .complex-keys .json__key:after, .complex-keys .json__key--nested:after {
-        content: '":';
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
       }
-      .json__key--nested {
-        float: left;
-        margin-left: -1.25em;
-        margin-right: 1.875em;
+      to {
+        visibility: visible
       }
-      .json__value, .json__value--string, .json__value--number, .json__value--boolean, .json__value--link {
-        background: #0E1112;
-        color: #b48ead;
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
       }
-      .json__value:focus, .json__value--string:focus, .json__value--number:focus, .json__value--boolean:focus, .json__value--link:focus {
-        color: #fff;
+      to {
+        visibility: visible
       }
-      .json__value--string {
-        color: #a3be8c;
-      }
-      .json__value--string:before {
-        content: '"';
-      }
-      .json__value--string:after {
-        content: '",';
-      }
-      .json__value--number {
-        color: #d08770;
-      }
-      .json__value--number:after {
-        content: ',';
-      }
-      .json__value--boolean {
-        color: #d08770;
-      }
-      .json__value--boolean:after {
-        content: ',';
-      }
-      .json__value--link {
-        color: #96b5b4;
-        text-decoration: none;
-      }
-      .json__value--link:before {
-        content: '"';
-      }
-      .json__value--link:after {
-        content: '",';
-      }
-      .json__value--link:hover {
-        text-decoration: none;
-      }
-      .json__value--last:after {
-        content: '"';
-      }
-      .json__object {
-        padding-left: 1.25em;
-      }
-      .json__object:before, .json__object:after {
-        margin-left: -1.25em;
-      }
-      .json__object:before {
-        content: '{';
-      }
-      .json__object:after {
-        content: '},';
-      }
-      .json__container {
-        padding-left: 1.25em;
-      }
-      .json__container:before, .json__container:after {
-        margin-left: -1.25em;
-      }
-      .json__container:before {
-        content: '{';
-      }
-      .json__container:after {
-        content: '}';
-      }
-      .json__array {
-        padding-left: 1.25em;
-      }
-      .json__array:before, .json__array:after {
-        margin-left: -1.25em;
-      }
-      .json__array:before {
-        content: '[';
-      }
-      .json__array:after {
-        content: '],';
-      }
-      .json__array > .json__value, .json__array > .json__value--string, .json__array > .json__value--number, .json__array > .json__value--boolean, .json__array > .json__value--link {
-        display: block;
-      }
-      html {
-        background: #0E1112;
-        color: #c0c5ce;
-      }
-      h1 {
-        margin: 0.5em 0.5em 1em;
-        font-size: 2em;
-      }
-    </style>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
-    <noscript>
-      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
-    </noscript>
-  </head>
-  <body>
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+  </noscript>
+</head>
+
+<body>
     <div class="json">
-      <fieldset class="json__object json__value--last">
-        <label class="json__pair"><span class="json__key">type</span><span class="json__value--boolean">engineer</span></label>
-        <label class="json__pair"><span class="json__key">first_name</span><span class="json__value--string">Ana</span></label>
-        <label class="json__pair"><span class="json__key">middle_name</span><span class="json__value--string">María</span></label>
-        <label class="json__pair"><span class="json__key">last_name</span><span class="json__value--string">Sosa</span></label>
-        <label class="json__pair"><span class="json__key">birth_date</span><span class="json__value--number">23/02/1996</span></label>
-        <label class="json__pair"><span class="json__key">email</span><a class="json__value--link" href="mailto:anamariasosam@gmail.com" target="_top">anamariasosam@gmail.com</a></label>
-        <label class="json__pair"><span class="json__key">location</span><span class="json__value--string">Medellín, Colombia</span></label>
-        <fieldset class="json__object">
-          <legend class="json__key--nested">education</legend>
-          <label class="json__pair"><span class="json__key">degree</span><span class="json__value--string">Computer Science</span></label>
-          <label class="json__pair"><span class="json__key">university</span><span class="json__value--string">Universidad de Medellín</span></label>
-          <label class="json__pair"><span class="json__key">status</span><span class="json__value--number">6/10</span></label>
+        <fieldset class="json__object json__value--last">
+            <label class="json__pair"><span class="json__key">type</span><span class="json__value--boolean">engineer</span></label>
+            <label class="json__pair"><span class="json__key">first_name</span><span class="json__value--string">Ana</span></label>
+            <label class="json__pair"><span class="json__key">middle_name</span><span class="json__value--string">María</span></label>
+            <label class="json__pair"><span class="json__key">last_name</span><span class="json__value--string">Sosa</span></label>
+            <label class="json__pair"><span class="json__key">birth_date</span><span class="json__value--number">23/02/1996</span></label>
+            <label class="json__pair"><span class="json__key">email</span><a class="json__value--link" href="mailto:anamariasosam@gmail.com" target="_top">anamariasosam@gmail.com</a></label>
+            <label class="json__pair"><span class="json__key">location</span><span class="json__value--string">Medellín, Colombia</span></label>
+            <fieldset class="json__object">
+                <legend class="json__key--nested">education</legend>
+                <label class="json__pair"><span class="json__key">degree</span><span class="json__value--string">Computer Science</span></label>
+                <label class="json__pair"><span class="json__key">status</span><span class="json__value--number">6/10</span></label>
+                <label class="json__pair"><span class="json__key">university</span><span class="json__value--string json__value--last">Universidad de Medellín</span></label>
+            </fieldset>
+            <fieldset class="json__object">
+                <legend class="json__key--nested">job</legend>
+                <label class="json__pair"><span class="json__key">role</span><span class="json__value--boolean">CEO</span></label>
+                <label class="json__pair"><span class="json__key">company</span><a class="json__value--link" href="https://catlog.co" target="_blank">Catlog</a></label>
+                <label class="json__pair"><span class="json__key">description</span><span class="json__value--string json__value--last">ecommerce for Instagram's stores</span></label>
+            </fieldset>
+            <fieldset class="json__object">
+                <legend class="json__key--nested">programming_languages</legend>
+                <label class="json__pair"></label>
+                <label class="json__pair"><span class="json__key">front_end</span><span class="json__value--string">JavaScript</span></label>
+                <label class="json__pair"><span class="json__key">back_end</span><span class="json__value--string json__value--last">Ruby</span></label>
+            </fieldset>
+            <fieldset class="json__array">
+                <legend class="json__key--nested">social_networks</legend><a class="json__value--link" href="https://facebook.com/anamariasosam" target="_blank">Facebook</a><a class="json__value--link" href="https://github.com/anamariasosam" target="_blank">Github</a><a class="json__value--link"
+                    href="https://instagram.com/anamariasosam" target="_blank">Instagram</a><a class="json__value--link" href="https://twitter.com/anamariasosam" target="_blank">Twitter</a><a class="json__value--link json__value--last" href="https://youtube.com/anamariasosam"
+                    target="_blank">YouTube</a>
+            </fieldset>
+            <fieldset class="json__array">
+                <legend class="json__key--nested">slides</legend><a class="json__value--link" href="https://docs.google.com/presentation/d/1Ve5u_tNfA1s0k85z48qWHDMSH0LfOqSTSC8yjy7zjsc/edit?usp=sharing" target="_blank">GitHub</a><a class="json__value--link json__value--last" href="https://speakerdeck.com/anamariasosam/jekyll"
+                    target="_blank">Jekyll</a>
+            </fieldset>
         </fieldset>
-        <fieldset class="json__object">
-          <legend class="json__key--nested">job</legend>
-          <label class="json__pair"><span class="json__key">role</span><span class="json__value--boolean">CEO</span></label>
-          <label class="json__pair"><span class="json__key">company</span><a class="json__value--link" href="https://catlog.co" target="_blank">Catlog</a></label>
-          <label class="json__pair"><span class="json__key">description</span><span class="json__value--string json__value--last">ecommerce for Instagram's stores</span></label>
-        </fieldset>
-        <fieldset class="json__object">
-          <legend class="json__key--nested">programming_languages</legend>
-          <label class="json__pair"></label>
-          <label class="json__pair"><span class="json__key">front_end</span><span class="json__value--string">JavaScript</span></label>
-          <label class="json__pair"><span class="json__key">back_end</span><span class="json__value--string json__value--last">Ruby</span></label>
-        </fieldset>
-        <fieldset class="json__array">
-          <legend class="json__key--nested">social_networks</legend><a class="json__value--link" href="https://facebook.com/anamariasosam" target="_blank">Facebook</a><a class="json__value--link" href="https://github.com/anamariasosam" target="_blank">Github</a><a class="json__value--link" href="https://instagram.com/anamariasosam" target="_blank">Instagram</a><a class="json__value--link" href="https://twitter.com/anamariasosam" target="_blank">Twitter</a><a class="json__value--link" href="https://youtube.com/anamariasosam" target="_blank">YouTube</a>
-        </fieldset>
-        <fieldset class="json__array">
-          <legend class="json__key--nested">slides</legend><a class="json__value--link" href="https://docs.google.com/presentation/d/1Ve5u_tNfA1s0k85z48qWHDMSH0LfOqSTSC8yjy7zjsc/edit?usp=sharing" target="_blank">GitHub</a><a class="json__value--link json__value--last" href="https://speakerdeck.com/anamariasosam/jekyll" target="_blank">Jekyll</a>
-        </fieldset>
-      </fieldset>
     </div>
-  </body>
+</body>
 </html>
